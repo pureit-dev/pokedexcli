@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func getPokeLocations() error {
+func GetPokeLocations() error {
 	res, err := http.Get("https://pokeapi.co/api/v2/location-area/")
 		if err != nil {
 			log.Fatal(err)

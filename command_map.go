@@ -5,4 +5,9 @@ import (
 )
 
 func commandMap() error {
+	err := pokeapi.GetPokeLocations()
+	if err != nil {
+		return err
+	}
+	return nil
 }
