@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/pureit-dev/pokedexcli/internal/pokeapi"
-)
+import "github.com/pureit-dev/pokedexcli/internal/pokeapi"
 
 func commandMap() error {
 	err := pokeapi.GetPokeLocations()
